@@ -11,8 +11,7 @@ public class TestLogIn {
     public void testLogInFuncionality() {
         String email = "john@gmail.com";
         String password = "testt";
-
-
+        
         System.setProperty("webdriver.chrome.driver", "./src/main/resources/driver/chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
@@ -36,7 +35,6 @@ public class TestLogIn {
             String actualHeader = driver.findElement(By.id("slider_row"));
 
             assert actualHeader.equals(expectedHeader);
-
 
         } catch (InterruptedException e) {
             e.printStackTrace();
